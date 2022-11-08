@@ -28,35 +28,6 @@
   flex-grow: 1;
 }
 
-.navbar {
-  position: sticky;
-  z-index: 10;
-  top: 0;
-  backdrop-filter: saturate(180%) blur(20px);
-}
-
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.navbar .navbarLinks {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  list-style-type: none;
-}
-
-.navbar .navbarIcons{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 .title a {
   color: #0070f3;
   text-decoration: none;
