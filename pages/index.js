@@ -14,7 +14,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <section className={styles.hero}>
+          <div className={styles.main}>
+            <div className={styles.heroText}>
+              <h1 className={styles.title}>Hi, I am Joseph</h1>
+              <h2>Full Stack Developer</h2>
+            </div>
+            <div className={styles.heroImage}>
+              <Image src="/images/hero-image.png" width={500} height={500} />
+            </div>
+          </div>
+        </section>
+        <h1 >
           Hi, I'm Joseph Ayman
           I am a Full Stack Developer.
         </h1>
