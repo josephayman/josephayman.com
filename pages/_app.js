@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import '../styles/locomotive-scroll.css'
 import { useEffect } from 'react';
 // import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
