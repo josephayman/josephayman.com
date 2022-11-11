@@ -1,7 +1,7 @@
 .container {
   padding: 0 2rem;
   width: 100%;
-  max-width: 1225px;
+  max-width: 82vw;
   margin: 0 auto;
   position: relative;
 }
@@ -42,8 +42,6 @@
   align-items: center;
   flex-grow: 1;
 }
-
-/* */
 
 .title a {
   color: #0070f3;
