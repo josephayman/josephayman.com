@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,27 +22,61 @@ export default function Home() {
               A SOFTWARE DEVELOPER <br />
               BASED IN OSLO, NORWAY.
             </h1>
-            <p>Welcome to my piece of the internet.</p>
-            <p className={styles.description}>Site in progress...</p>
           </div>
         </section>
         <section className={styles.contentSection}>
           <div className={styles.container}>
-            <h2>About</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              tincidunt, nisl eget ultricies tincidunt, nisl nisl aliquet nisl,
-              ut aliquet nisl nisl sit amet nisl. Sed tincidunt, nisl eget
-              ultricies tincidunt, nisl nisl aliquet nisl, ut aliquet nisl nisl
-              sit amet nisl. Sed tincidunt, nisl eget ultricies tincidunt, nisl
-              nisl aliquet nisl, ut aliquet nisl nisl sit amet nisl. Sed
-              tincidunt, nisl eget
-            </p>
+            <h2>Skills</h2>
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3>Frontend</h3>
+                <p>
+                  HTML, CSS, JavaScript, React, Next.js, Tailwind CSS,
+                  Bootstrap, Material UI, Styled Components, Framer Motion,
+                  Locomotive Scroll
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h3>Backend</h3>
+                <p>
+                  Node.js, Express, MongoDB, Mongoose, REST API, GraphQL, Apollo
+                  Server, Apollo Client, JWT, Passport.js, Bcrypt, Mocha, Chai,
+                  Supertest, Jest, Enzyme, Sinon, Nodemailer, Multer, Stripe,
+                  Socket.io
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h3>DevOps</h3>
+                <p>
+                  Git, GitHub, GitLab, Heroku, Netlify, Vercel, Docker, Nginx,
+                  DigitalOcean, AWS, Cloudflare, Cloudinary, MongoDB Atlas,
+                  Cloudinary, SendGrid, Twilio
+                </p>
+              </div>
+              <div className={styles.card}>
+                <h3>Other</h3>
+                <p>
+                  Agile, Scrum, Kanban, TDD, BDD, CI/CD, OOP, MVC, RESTful API,
+                  JSON, XML, AJAX, Webpack, Babel, NPM, Yarn, WebSockets,
+                  WebRTC, Webhooks, OAuth, Web Performance, Web Accessibility,
+                  SEO,
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer className={styles.footer}></footer>
+      <footer className={styles.footer}>
+        <Link href="/">
+          Home
+        </Link>
+        <Link href="/about">
+          About
+        </Link>
+        
+
+      </footer>
     </div>
   );
 }
