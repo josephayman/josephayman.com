@@ -8,12 +8,25 @@
     align-items: center;
     padding: 1rem 2rem;
   }
-  
-  .navbar .navbarLinks {
+
+  .navMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    list-style-type: none;
+    list-style: none;
+    text-align: center;
   }
+  
+.navLinks {
+    display: flex;
+    list-style: none;
+  }
+
+
+  .navLink {
+      padding: 20px;
+      margin-left: 13px;
+  }
+
+
   
