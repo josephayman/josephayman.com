@@ -1,10 +1,10 @@
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
+import Container from "../../components/Container";
 import styles from "../../styles/Home.module.css";
 
 export default function Blog() {
   return (
-    <>
+    <Container title="Blog – Joseph Ayman">
     <Navbar />
     <div className={styles.container}>    
       <h1>Welcome to my blog</h1>
@@ -20,6 +20,6 @@ export default function Blog() {
         </Link>
       </div>
       </div>
-    </>
+    </Container>
   );
 }

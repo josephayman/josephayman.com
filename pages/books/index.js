@@ -1,10 +1,9 @@
-import Navbar from "../../components/Navbar";
+import Container from "../../components/Container";
 import styles from "../../styles/Home.module.css";
 
 export default function books() {
   return (
-    <>
-        <Navbar />
+    <Container title="Books – Joseph Ayman">
     <div className={styles.container} >
         <h1>
             This a list of books that I've read and would recommend. And they have a little summary and my thoughts about them.
@@ -25,6 +24,6 @@ export default function books() {
             </li>
         </ul>
     </div>
-    </>
+    </Container>
   )
 }
