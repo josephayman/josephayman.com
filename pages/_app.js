@@ -1,6 +1,7 @@
-import '../styles/globals.css'
-import '../styles/locomotive-scroll.css'
-import { useEffect } from 'react';
+import "../styles/globals.css";
+import "../styles/locomotive-scroll.css";
+import { useEffect } from "react";
+import { ThemeProvider } from "next-themes";
 // import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function MyApp({ Component, pageProps }) {
@@ -8,24 +9,26 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     let scroll;
     import("locomotive-scroll").then((locomotiveModule) => {
-        scroll = new locomotiveModule.default({
-            el: document.querySelector("[data-scroll-container]"),
-            smooth: true,
-            smoothMobile: false,
-            resetNativeScroll: true
-        });
+      scroll = new locomotiveModule.default({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        smoothMobile: false,
+        resetNativeScroll: true,
+      });
     });
 
     // `useEffect`'s cleanup phase
     return () => {
-        if (scroll) scroll.destroy();
-    }
-});
+      if (scroll) scroll.destroy();
+    };
+  });
   return (
-  <main data-scroll-container>
-    <Component {...pageProps} />
-  </main>
-  ) 
+    <ThemeProvider attribute="class">
+      <main data-scroll-container>
+        <Component {...pageProps} />
+      </main>
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
