@@ -1,7 +1,7 @@
 import Container from "../components/Container";
 import Styles from "../styles/Home.module.css";
 
-export default function Blog({ children, post }) {
+export default function BlogLayout({ children, post }) {
   return (
     <Container 
     title={`${post.title} – Joseph Ayman`}
