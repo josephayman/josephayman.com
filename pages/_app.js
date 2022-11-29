@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import "../styles/locomotive-scroll.css";
 import { useEffect } from "react";
 import { ThemeProvider } from "next-themes";
+
+
 // import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 function MyApp({ Component, pageProps }) {
