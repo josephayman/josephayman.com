@@ -6,6 +6,8 @@ import { ThemeProvider } from "next-themes";
 
 // import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
+
+
 function MyApp({ Component, pageProps }) {
   // useEffect(()=> window.dispatchEvent(new Event('resize')), [Component]);
   useEffect(() => {
